@@ -1,8 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
+  let num: number = 0;
+  type User = {
+    id: number;
+    name: string;
+    tags: string[];
+  };
+
+  const user: User = {
+    id: 1,
+    name: "Yamada",
+    tags: [""],
+  };
   return (
     <div className="App">
       <header className="App-header">
